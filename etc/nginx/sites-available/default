@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    location / {
+        include proxy_params;
+        proxy_pass http://127.0.0.1:8000;
+    }
+    location /static/ {
+        root /opt/demo/;
+        access_log off;
+    }
+}

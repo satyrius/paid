@@ -1,0 +1,20 @@
+version: "2"
+
+services:
+  web:
+    build: .
+    container_name: web
+    environment:
+      DJANGO_SETTINGS_MODULE: demo.settings_prod
+      DATABASE_URL: postgres://postgres:secret@db/demo
+      ALLOWED_HOSTS: "*"
+    ports:
+      - "80:80"
+
+  db:
+    image: postgres:9.5
+    environment:
+      POSTGRES_PASSWORD: "secret"
+      POSTGRES_DB: "demo"
+    volumes:
+      - /var/lib/postgresql/data
