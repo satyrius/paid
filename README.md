@@ -1,5 +1,5 @@
 # paid
-Python App In a Docker (PAID) example prepared for Moscow Python Meetup
+Python App In a Docker (PAID) example prepared for Moscow [Python Meetup](http://www.moscowpython.ru/meetup/35/dokerizacija-prilozhenij-na-python/) and Pycon Russia 2016.
 
 ## Prepare
 First you should provision a Docker host (e.g. with [Docker Machine](https://docs.docker.com/machine/)) and install [Docker Compose](https://docs.docker.com/compose/).
